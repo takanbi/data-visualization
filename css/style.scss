@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -17,6 +19,10 @@
         align-self: flex-start;
         margin-left: 4.5em;
         margin-bottom: 0.25em;
+        transition: all 200ms linear;
+    }
+    h1:hover {
+        color: rgba(255, 98, 98, 1);
     }
     // div#main {
     //     margin-top: 2em;
@@ -25,18 +31,21 @@
     // }
     div#main2 {
         background-color: white;
-        width: 1024px;
-        height: 468px;
+        // width: 1024px;
+        // height: 468px;
         padding: 2em;
         border-radius: 1em;
-
         width: 80%;
-        height: 400px;
+        height: 80%;
     }
     a {
         margin-top: 1em;
         color:white; 
         text-decoration: none;
         cursor: pointer;
+        transition: all 200ms linear;
+    }
+    a:hover {
+        color: rgba(255, 98, 98, 1);
     }
 }
