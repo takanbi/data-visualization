@@ -12,11 +12,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    div#main {
-        margin-top: 2em;
-        width: 600px;
-        height: 400px;
+    h1 {
+        color: white;
+        align-self: flex-start;
+        margin-left: 4.5em;
+        margin-bottom: 0.25em;
     }
+    // div#main {
+    //     margin-top: 2em;
+    //     width: 600px;
+    //     height: 400px;
+    // }
     div#main2 {
         background-color: white;
         width: 1024px;
@@ -24,7 +30,13 @@
         padding: 2em;
         border-radius: 1em;
 
-        // width: 600px;
-        // height: 400px;
+        width: 80%;
+        height: 400px;
+    }
+    a {
+        margin-top: 1em;
+        color:white; 
+        text-decoration: none;
+        cursor: pointer;
     }
 }

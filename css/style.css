@@ -24,10 +24,12 @@
           flex-direction: column;
 }
 
-.container div#main {
-  margin-top: 2em;
-  width: 600px;
-  height: 400px;
+.container h1 {
+  color: white;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 4.5em;
+  margin-bottom: 0.25em;
 }
 
 .container div#main2 {
@@ -36,5 +38,14 @@
   height: 468px;
   padding: 2em;
   border-radius: 1em;
+  width: 80%;
+  height: 400px;
+}
+
+.container a {
+  margin-top: 1em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

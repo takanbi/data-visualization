@@ -2,13 +2,19 @@
 
 var chartDom = document.getElementById('main2');
 var myChart = echarts.init(chartDom);
+//
+window.onresize = ()=> {
+    myChart.resize();
+}//now responsive
 var option;
 
 option = {
   color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
   title: {
     text: 'Gradient Stacked Area Chart',
-    left: "left"
+    left: 'left',
+    // textVerticalAlign: '-50',
+    // top: '-10'
   },
   tooltip: {
     trigger: 'axis',
@@ -21,7 +27,8 @@ option = {
   },
   legend: {
     data: ['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5'],
-    left: "right"
+    left: "right",
+    top: '20px'//
   },
 //   toolbox: {
 //     feature: {
@@ -29,10 +36,14 @@ option = {
 //     }
 //   },
   grid: {
-    left: '3%',
+    left: '2%',
     right: '4%',
     bottom: '3%',
-    containLabel: true
+    // left: '0',
+    // right: '0',
+    // bottom: '0',
+    containLabel: true,
+    width: '100%'
   },
   xAxis: [
     {
