@@ -1,13 +1,14 @@
 // import * as echarts from 'echarts';
 
-var chartDom = document.getElementById('main');
+var chartDom = document.getElementById('main2');
 var myChart = echarts.init(chartDom);
 var option;
 
 option = {
   color: ['#80FFA5', '#00DDFF', '#37A2FF', '#FF0087', '#FFBF00'],
   title: {
-    text: 'Gradient Stacked Area Chart'
+    text: 'Gradient Stacked Area Chart',
+    left: "left"
   },
   tooltip: {
     trigger: 'axis',
@@ -19,13 +20,14 @@ option = {
     }
   },
   legend: {
-    data: ['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5']
+    data: ['Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5'],
+    left: "right"
   },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
+//   toolbox: {
+//     feature: {
+//       saveAsImage: {}
+//     }
+//   },
   grid: {
     left: '3%',
     right: '4%',
@@ -50,10 +52,12 @@ option = {
       type: 'line',
       stack: 'Total',
       smooth: true,
+    //   cursor: "pointer",
       lineStyle: {
         width: 0
       },
-      showSymbol: false,
+    //   showSymbol: false,
+      showSymbol: true,
       areaStyle: {
         opacity: 0.8,
         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -80,7 +84,8 @@ option = {
       lineStyle: {
         width: 0
       },
-      showSymbol: false,
+    //   showSymbol: false,
+      showSymbol: true,
       areaStyle: {
         opacity: 0.8,
         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -107,7 +112,8 @@ option = {
       lineStyle: {
         width: 0
       },
-      showSymbol: false,
+    //   showSymbol: false,
+      showSymbol: true,
       areaStyle: {
         opacity: 0.8,
         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -134,7 +140,8 @@ option = {
       lineStyle: {
         width: 0
       },
-      showSymbol: false,
+    //   showSymbol: false,
+      showSymbol: true,
       areaStyle: {
         opacity: 0.8,
         color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -161,7 +168,8 @@ option = {
       lineStyle: {
         width: 0
       },
-      showSymbol: false,
+    //   showSymbol: false,
+      showSymbol: true,
       label: {
         show: true,
         position: 'top'

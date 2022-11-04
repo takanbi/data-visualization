@@ -1,10 +1,12 @@
       // Initialize the echarts instance based on the prepared dom
-      var myChart = echarts.init(document.getElementById('main'));
+      var myChart = echarts.init(document.getElementById('main2'));
 
       // Specify the configuration items and data for the chart
       var option = {
         title: {
-          text: 'ECharts Getting Started Example'
+          text: 'ECharts Getting Started Example',
+          left: "left",
+          top: "0px"
         },
         tooltip: {},
         legend: {
