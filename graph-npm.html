@@ -36,12 +36,14 @@
       useDirtyRect: false
     });
     var app = {};
-    var ROOT_PATH = 'https://echarts.apache.org/examples';
+    // var ROOT_PATH = 'https://echarts.apache.org/examples';
+    var ROOT_PATH = '';
     var option;
 
     myChart.showLoading();
 $.getJSON(
-  ROOT_PATH + '/data/asset/data/npmdepgraph.min10.json',
+  // ROOT_PATH + '/data/asset/data/npmdepgraph.min10.json',
+  ROOT_PATH + 'js/npmdepgraph.min10.json',
   function (json) {
     myChart.hideLoading();
     myChart.setOption(
